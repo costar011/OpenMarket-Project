@@ -1,38 +1,3 @@
-.home_result {
-  width: 100%;
-  height: 6vh;
-  margin-top: 25px;
-
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-
-  font-size: 15px;
-  font-weight: 600;
-}
-
-.solid {
-  width: 100%;
-  height: 4vh;
-
-  border-bottom: solid;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-.homeBtn {
-  display: flex;
-  flex-direction: row;
-
-  margin: 20px;
-
-  align-items: center;
-  justify-content: flex-end;
-}
-
 .menuItems {
   display: flex;
   flex-direction: column;
@@ -59,11 +24,17 @@
 
   padding: 20px;
   border: 1px solid #0b0b0b;
-  margin: 7px;
+  margin: 10px;
   border-radius: 27px;
 
   font-size: 17px;
   font-weight: 600;
   align-items: center;
   justify-content: center;
+}
+
+.icon {
+  display: flex;
+  flex-direction: row;
+  margin: 15px;
 }

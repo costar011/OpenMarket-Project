@@ -1,5 +1,5 @@
 import React from "react";
-// import SearchIcon from "@material-ui/icons/Search";
+import SearchIcon from "@material-ui/icons/Search";
 import firestore from "../firebaseConfig";
 
 class Search extends React.Component {
@@ -36,6 +36,10 @@ class Search extends React.Component {
 
     return (
       <div>
+        <div className="icon">
+          <SearchIcon />
+        </div>
+
         {dataList.length === 0 ? (
           <div>조회된 데이터가 없습니다.</div>
         ) : (
