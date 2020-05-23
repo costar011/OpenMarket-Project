@@ -8,6 +8,7 @@ class Search extends React.Component {
 
     this.state = {
       dataList: [],
+      searchValue: "",
     };
   }
 
@@ -32,12 +33,13 @@ class Search extends React.Component {
       });
   };
   render() {
-    const { dataList } = this.state;
+    const { dataList, searchValue } = this.state;
 
     return (
       <div>
         <div className="icon">
-          <SearchIcon />
+          <input type="text" value={searchValue} onChange={this._valueChange} />
+          <SearchIcon onClick={() => this._SearchHanDler()} />
         </div>
 
         {dataList.length === 0 ? (
@@ -56,6 +58,32 @@ class Search extends React.Component {
       </div>
     );
   }
+  _SearchHanDler = async () => {
+    let productList = new Array();
+    await firestore
+      .collection("products")
+      .where("p_name", "==", this.state.searchValue)
+      .get()
+      .then((res) => {
+        res.forEach((doc) => {
+          productList.push({
+            imagePath: doc.data().imagePath,
+            p_name: doc.data().p_name,
+            p_price: doc.data().p_price,
+          });
+
+          this.setState({
+            dataList: productList,
+          });
+        });
+      });
+  };
+
+  _valueChange = (e) => {
+    this.setState({
+      searchValue: e.target.value,
+    });
+  };
 }
 
 export default Search;

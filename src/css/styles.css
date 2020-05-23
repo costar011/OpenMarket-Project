@@ -37,4 +37,6 @@
   display: flex;
   flex-direction: row;
   margin: 15px;
+  align-items: center;
+  justify-content: flex-end;
 }
