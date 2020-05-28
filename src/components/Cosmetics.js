@@ -41,19 +41,21 @@ class Cosmetics extends React.Component {
           <SearchIcon onClick={() => this._SearchHanDler()} />
         </div>
 
-        {dataList.length === 0 ? (
-          <div>조회된 데이터가 없습니다.</div>
-        ) : (
-          dataList.map((data, idx) => {
-            return (
-              <div className="productBox" key={idx}>
-                <img src={data.imagePath} width="200" height="200" />
-                <div>{data.p_name}</div>
-                <div>{data.p_price}원</div>
-              </div>
-            );
-          })
-        )}
+        <div className="boxs">
+          {dataList.length === 0 ? (
+            <div>조회된 데이터가 없습니다.</div>
+          ) : (
+            dataList.map((data, idx) => {
+              return (
+                <div className="productBox" key={idx}>
+                  <img src={data.imagePath} width="230" height="230" />
+                  <div className="p_name">{data.p_name}</div>
+                  <div className="p_price">{data.p_price}원</div>
+                </div>
+              );
+            })
+          )}
+        </div>
       </div>
     );
   }

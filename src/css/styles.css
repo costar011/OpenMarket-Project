@@ -13,24 +13,51 @@
 
 .menuItems a:hover {
   text-decoration: none;
-  color: #58acfa;
+  color: #3e64ff;
   font-weight: 600;
-  margin-bottom: 16px;
+  margin-bottom: 17px;
+}
+.boxs {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 100px;
 }
 
 .productBox {
   display: flex;
   flex-direction: column;
-
+  width: 300px;
+  min-width: 300px;
+  height: 300px;
   padding: 20px;
-  border: 1px solid #0b0b0b;
+  border: 2px solid #0d12a5;
   margin: 10px;
-  border-radius: 27px;
-
-  font-size: 17px;
-  font-weight: 600;
+  border-radius: 30px;
+  font-size: 16px;
   align-items: center;
   justify-content: center;
+  box-shadow: 10px 6px 5px #eee;
+}
+
+.productBox img {
+  border-radius: 10px;
+}
+
+.productBox .p_name {
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.productBox .p_price {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .icon {
@@ -39,4 +66,26 @@
   margin: 15px;
   align-items: center;
   justify-content: flex-end;
+}
+
+.icon input {
+  width: 230px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+  border: 2px solid #023faf;
+  background: none;
+  outline: none;
+  padding: 4px;
+  box-shadow: 8px 6px 3px #d8dade;
+}
+
+.icon svg {
+  padding: 4px;
+  cursor: pointer;
+  font-size: 35px;
+}
+
+.icon svg:hover {
+  color: #101dcf;
 }
