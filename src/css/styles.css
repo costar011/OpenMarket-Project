@@ -22,7 +22,8 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-left: 100px;
+  margin: 5px;
+  margin-left: 3px;
 }
 
 .productBox {
@@ -73,19 +74,21 @@
   display: flex;
   flex-direction: row;
   border-radius: 10px;
-  border: 2px solid #023faf;
+  border: 3px solid #023faf;
   background: none;
   outline: none;
   padding: 4px;
   box-shadow: 8px 6px 3px #d8dade;
+  margin-right: 15px;
 }
 
 .icon svg {
-  padding: 4px;
+  padding: 5px;
   cursor: pointer;
-  font-size: 35px;
+  font-size: 40px;
+  margin-right: 3px;
 }
 
 .icon svg:hover {
-  color: #101dcf;
+  color: #2e2efe;
 }
