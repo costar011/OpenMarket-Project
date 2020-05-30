@@ -22,8 +22,6 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 5px;
-  margin-left: 3px;
 }
 
 .productBox {
@@ -32,18 +30,18 @@
   width: 300px;
   min-width: 300px;
   height: 300px;
-  padding: 20px;
-  border: 2px solid #0d12a5;
-  margin: 10px;
-  border-radius: 30px;
-  font-size: 16px;
+  padding: 15px;
+  border: 2px solid #78a9ed;
+  margin: 15px;
+  margin-left: 5px;
+  border-radius: 35px;
   align-items: center;
   justify-content: center;
-  box-shadow: 10px 6px 5px #eee;
+  box-shadow: 10px 6px 5px #f2f2f2;
 }
 
 .productBox img {
-  border-radius: 10px;
+  border-radius: 15px;
 }
 
 .productBox .p_name {
@@ -70,25 +68,25 @@
 }
 
 .icon input {
-  width: 230px;
+  width: 240px;
   display: flex;
   flex-direction: row;
   border-radius: 10px;
-  border: 3px solid #023faf;
+  border: 3px solid #148cff;
   background: none;
   outline: none;
-  padding: 4px;
-  box-shadow: 8px 6px 3px #d8dade;
-  margin-right: 15px;
+  padding: 5px;
+  box-shadow: 8px 6px 3px #e6e6e6;
+  margin-right: 8px;
 }
 
 .icon svg {
-  padding: 5px;
+  padding: 4px;
   cursor: pointer;
   font-size: 40px;
-  margin-right: 3px;
+  margin-right: 5px;
 }
 
 .icon svg:hover {
-  color: #2e2efe;
+  color: #0a82ff;
 }
